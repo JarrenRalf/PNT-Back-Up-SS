@@ -3,7 +3,7 @@ function createBackUps()
   const today = new Date();
   const Num_Days_Ago = 14;
   const two_weeks_ago = today.getTime() - 3600000*24*Num_Days_Ago;
-  const ssBackUpFolder = DriveApp.getFolderById('1kFpWt2pyiwx_UAAv236f6cfFSPFnOQjQ')
+  const ssBackUpFolder = DriveApp.getFolderById('1-VLEJEUJUpbNOAHQDjR-jjIeuEWMpNQe')
   const allFolders = ssBackUpFolder.getFolders()
   var ss, folder;
 
