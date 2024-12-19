@@ -1,3 +1,9 @@
+/**
+ * This function creates back ups of all of our frequently used spreadsheets and stores them in a folder in the google drive 
+ * pertaining to the day the back up was created. Back ups are kept for 14 days.
+ * 
+ * @author Jarren Ralf
+ */
 function createBackUps()
 {
   const today = new Date();
@@ -69,6 +75,11 @@ function createBackUps()
   })
 }
 
+/**
+ * This function creates the trigger for the back up function to run daily.
+ * 
+ * @author Jarren Ralf
+ */
 function createTrigger()
 {
   ScriptApp.newTrigger('createBackUps').timeBased().atHour(22).everyDays(1).create(); // Run at 10pm everyday
