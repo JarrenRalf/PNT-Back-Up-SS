@@ -66,7 +66,7 @@ function createBackUps()
     try
     {
       ss = DriveApp.getFileById(file["id"])
-      ss.makeCopy('Back-Up ' + ss.getName() + ' | ' + dateString, newFolder)
+      ss.makeCopy('Back-Up ' + ss.getName().split('').reverse().join('') + ' | ' + dateString, newFolder)
     }
     catch (err)
     {
